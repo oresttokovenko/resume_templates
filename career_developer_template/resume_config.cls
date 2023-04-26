@@ -55,7 +55,7 @@
 \raggedright
 
 \geometry{
-    paper=letter, % Paper size, change to letterpaper for US letter size
+    paper=letterpaper, % Paper size, change to letterpaper for US letter size
     top=0.5in, % Top margin
     bottom=0.5in, % Bottom margin
     left=0.5in, % Left margin

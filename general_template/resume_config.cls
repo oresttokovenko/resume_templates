@@ -52,7 +52,7 @@
 \raggedright
 
 \geometry{
-    paper=letter, % Paper size, change to letterpaper for US letter size
+    paper=letterpaper, % Paper size, change to letterpaper for US letter size
     top=0.5in, % Top margin
     bottom=0.5in, % Bottom margin
     left=0.5in, % Left margin
@@ -114,8 +114,9 @@
 
 \NewDocumentEnvironment{SkillsList}{O{4} O{1in} +b}{
 \vspace{-12pt}
+    \setlength{\columnsep}{10pt}
     \begin{multicols}{#1}
-        \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, label={$-$}, columnsep=10pt]
+        \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, label={$-$}]
             \small{
                 #3
                 }
