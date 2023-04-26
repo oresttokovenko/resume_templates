@@ -1,0 +1,121 @@
+%-------------------------
+% Author : Orest Tokovenko
+% License : MIT
+%------------------------
+
+%-------------------------------------------------------------------------------
+%                Document & Class
+%-------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{resume_config}
+
+% NOTE: <- font size adjustment is available in the resume_config.cls file on the left hand side. ex. \LoadClass[#pt]{article} where # is 10, 11 or 12
+
+% NOTE: If you need to adjust the space between any two lines, use this function: \vspace{#pt} where # is your number. ex. \vspace{-5pt} decreases the space between lines
+
+%-------------------------------------------------------------------------------
+%                Resume Starts Here
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\Header
+    {John Smith} % name
+    {Calgary, AB} % city, province
+    {825-123-4567} % phone number
+    {johnsmith@gmail.com} % email
+    {johnsmith} % https://linkedin.com/in/_______
+    {johnsmith} % https://github.com/_______
+    [www.johnsmith.com] % website - this argument is entirely optional, deleting it won't affect the command
+
+%-------------------------------------------------------------------------------
+%                Work Experience
+%-------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\WorkExperience
+    {Senior Software Engineer} % job title
+    {Company Name} % company name
+    {Dec 2020 -- Mar 2022} % beginning and end of employment. If currently employed write " - Present"
+    {City, Province} % city, country of employment
+    {
+        \item Designed and implemented a microservices architecture using Java, Spring Boot, and JPA resulting in a 50\% reduction in application response time while increasing system scalability by 75%.
+        \item Developed an event-driven architecture utilizing Kafka to improve data processing efficiency by over 60\%, reducing the average query execution time from minutes to seconds
+        \item Collaborated with cross-functional teams on Agile methodologies including Scrum and Kanban for requirement gathering/analysis resulting in successful delivery of multiple projects within budget constraints
+        \item Built cloud-native applications utilizing AWS technologies such as S3 for storage solutions along with Lambda functions that reduced operational costs up to \$100k per year
+        \item Implemented Elastic Search within distributed systems built on Kubernetes clusters running in AWS EC2 instances, resulting in improved search functionality across multiple applications
+    } 
+
+\WorkExperience
+    {Software Engineer} % job title
+    {Company Name} % company name
+    {Dec 2017 -- Dec 2020} % beginning and end of employment. If currently employed write " - Present"
+    {City, Province} % city, country of employment
+    {
+        \item Worked with distributed systems building blocks (e.g., Kafka, Redis, Elastic Search) leading to an improvement of data processing speed from minutes down to seconds
+        \item Refactored legacy systems to modern microservices architecture utilizing AWS technologies such as Kubernetes S3, SQS, Lambda DynamoDB IAM etc. This improved system performance by up to 40\%
+        \item Designed and implemented a microservices architecture using Java, Spring Boot, and JPA resulting in a 30\% increase in application performance while reducing infrastructure costs by \$50k per year
+        \item Improved build automation process through implementation of Maven which reduced deployment time from hours to minutes saving approximately \$20k annually on labor cost
+        \item Leveraged AWS technologies such as S3, SQS, Lambda and DynamoDB for cloud-native development which resulted in higher scalability allowing the company's customer base growth rate increased by over 60\%
+    }
+
+\WorkExperience
+    {Junior Software Engineer} % job title
+    {Company Name} % company name
+    {Sep 2015 -- Dec 2017} % beginning and end of employment. If currently employed write " - Present"
+    {City, Province} % city, country of employment
+    {
+        \item Designed and developed a scalable backend API using Java, Spring Boot, Hibernate that increased system throughput by 20\% while reducing latency by 15\%
+        \item Implemented OLAP databases like Snowflake to support complex analytical queries resulting in an average query response time of less than one second
+        \item Developed batch applications using Maven build automation tool which reduced the overall processing time for large data sets from hours to minutes
+        \item Refactored legacy systems with Git version control system resulting in improved code quality and faster development cycles
+        \item Utilized AWS technologies such S3, SQS, Lambda, DynamoDB, IAM etc. to design highly available distributed systems that resulted in over 99.9\% uptime
+    }
+
+\vspace{-10pt}
+%-------------------------------------------------------------------------------
+%                Certifications
+%-------------------------------------------------------------------------------
+
+% \section{Certifications}
+
+% \Certification
+%     {Certified Developer - Associate} % credential name
+%     {Amazon Web Services (AWS)} % issuing institution
+%     {Aug 2021} % date of completion
+
+% \vspace{-7pt}
+%-------------------------------------------------------------------------------
+%                Education
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+\EducationExperience
+    {University Name} % school name
+    {Bachelor of Science in Computer Science} % credential name
+    {Jan 2015} % date of graduation
+    {City, Province} % city, country of school
+
+\vspace{-14pt}
+%-------------------------------------------------------------------------------
+%                Skills
+%-------------------------------------------------------------------------------
+
+\section{Skills}
+
+\vspace{1pt}
+
+\SkillList{
+    \SkillItem{Languages}{: Java, Javascript, Python}
+    \SkillItem{Frameworks}{: Maven, Gradle, Spring Boot, Django, Hibernate}
+    \SkillItem{Databases}{: PostgreSQL, Cassandra}
+    \SkillItem{Cloud Tools}{: AWS, Azure}
+}
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+%                Resume Ends Here
+%-------------------------------------------------------------------------------
