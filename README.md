@@ -4,10 +4,9 @@
 
 There are three distinct resume templates available to cater to different career stages and backgrounds. These templates are designed to help you create an effective resume that highlights your skills and achievements according to your unique situation:
 
-* **Junior Developer Template**: This template is tailored for aspiring developers who do not yet have professional experience. It emphasizes relevant skills, personal projects, and educational background to showcase your potential as a future software engineer.
-* **Professional Software Engineer Template**: Aimed at experienced software engineers, this template highlights your professional experience, technical skills, and accomplishments in the field. It allows you to demonstrate your expertise and showcase the value you can bring to potential employers.
-* **General Non-Technical Template**: Designed for individuals pursuing non-technical careers, this versatile template focuses on your transferable skills, work experience, and education. It's suitable for a wide range of professions and helps you present your qualifications in an organized and effective manner.
-By choosing the appropriate template for your situation, you can create a resume that effectively highlights your strengths and achievements, increasing your chances of standing out to potential employers.
+* **Junior Developer Template**: This template is tailored for aspiring developers who do not yet have professional experience. It emphasizes relevant skills, personal projects, and educational background to showcase your potential as a future software engineer
+* **Professional Software Engineer Template**: Aimed at experienced software engineers, this template highlights your professional experience, technical skills, and accomplishments in the field. It allows you to demonstrate your expertise and showcase the value you can bring to potential employers
+* **General Non-Technical Template**: Designed for individuals pursuing non-technical careers, this versatile template focuses on your transferable skills, work experience, and education. It's suitable for a wide range of professions and helps you present your qualifications in an organized and effective manner
 
 ### How to Use the Templates
 
