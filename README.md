@@ -30,16 +30,9 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 2. Install the LaTeX Workshop extension for VS Code or the TeXiFy IDEA plugin for IntelliJ IDEA
 3. `git clone` the GitHub repo containing the LaTeX code to your local machine
 4. Open the cloned repo in your chosen editor (VS Code or IntelliJ IDEA).
-5. Install a LaTeX distribution: If you haven't already, install a LaTeX distribution. I used `brew install --cask mactex-no-gui`
+5. If you haven't already, install a LaTeX distribution. I used `brew install --cask mactex-no-gui`
 6. Use the editor's built-in commands or the terminal to compile the `.tex` file using the XeLaTeX compiler in the terminal with `xelatex main.tex`. In VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button, and in IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'"
 7. After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
-
-
-<p float="left">
-  <img src="https://github.com/oresttokovenko/resume_templates/files/11327518/resume_template.pdf" width="500" />
-  <img src="https://github.com/oresttokovenko/resume_templates/files/11327509/resume_template_technical.pdf" width="500" /> 
-  <img src="https://github.com/oresttokovenko/resume_templates/files/11327519/resume_template_technical_junior.pdf" width="500" />
-</p>
 
 
 <p float="left">
