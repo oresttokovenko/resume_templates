@@ -101,7 +101,6 @@
 \newcommand{\Certification}[3]{
     \noindent
     \textbf{#1} $|$ {#2}\hfill \textit{#3}\\
-    \vspace{-9pt}
 }
 
 \newcommand{\EducationExperience}[4]{
