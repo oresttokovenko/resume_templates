@@ -12,7 +12,9 @@ There are three distinct resume templates available to cater to different career
 
 #### Method 1: Using Overleaf
 
-[<kbd> <br> Open as a Template <br> </kbd>]([https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv](https://www.overleaf.com/latex/templates/resume-template-by-orest/zmrmcnwmxdxn))
+[<kbd> <br> Overleaf Resume Template <br> </kbd>][Overleaf]
+
+[Overleaf]: https://www.overleaf.com/latex/templates/resume-template-by-orest/zmrmcnwmxdxn 'Overleaf Resume Template'
    
 #### Method 2: Running Locally with an Editor
 
