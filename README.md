@@ -12,14 +12,7 @@ There are three distinct resume templates available to cater to different career
 
 #### Method 1: Using Overleaf
 
-1. Open the GitHub repo containing the LaTeX code you want to use
-2. Find the .tex and .cls files in the repo that you need to use
-3. Open each file, and copy its content to your clipboard
-4. Go to Overleaf and create a new project
-5. In the new project, create two new files with the same names as the .tex and .cls files from the GitHub repo
-6. Paste the content of each file from your clipboard into the corresponding file in Overleaf
-7. In the Overleaf menu, click on the gear icon to open the project settings, and change the compiler to XeLaTeX
-8. Click the "Recompile" button to compile the document and see the output
+[<kbd> <br> Open as a Template <br> </kbd>]([https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv](https://www.overleaf.com/latex/templates/resume-template-by-orest/zmrmcnwmxdxn))
    
 #### Method 2: Running Locally with an Editor
 
