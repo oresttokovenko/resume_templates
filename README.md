@@ -18,14 +18,14 @@ There are three distinct resume templates available to cater to different career
    
 #### Method 2: Running Locally with an Editor
 
-To run the LaTeX code from a GitHub repo locally, you can use an editor like Visual Studio Code with the LaTeX Workshop extension or IntelliJ IDEA with the TeXiFy IDEA plugin. Follow these steps:
+To run the LaTeX code from a GitHub repo locally, you can use an editor like Visual Studio Code with the LaTeX Workshop extension or IntelliJ IDEA with the TeXiFy IDEA plugin. Make sure that you use the XeLaTeX compiler. Follow these steps:
 
 1. If you haven't already, download and install Visual Studio Code or IntelliJ IDEA
 2. Install the LaTeX Workshop extension for VS Code or the TeXiFy IDEA plugin for IntelliJ IDEA
 3. `git clone` the GitHub repo containing the LaTeX code to your local machine
 4. Open the cloned repo in your chosen editor (VS Code or IntelliJ IDEA).
 5. If you haven't already, install a LaTeX distribution. I used `brew install --cask mactex-no-gui`
-6. Use the editor's built-in commands or compile directly in the terminal with `xelatex main.tex`. In VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button, and in IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'"
+6. Use the editor's built-in commands or compile directly in the terminal with `xelatex main.tex`. In VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button, and in IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'". Alternatively, you can compile from the command line using `xelatex -interaction=nonstopmode main.tex`
 7. After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
 
 
