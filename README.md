@@ -35,6 +35,10 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 6. Use the editor's built-in commands or compile directly in the terminal with `xelatex main.tex`. In VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button, and in IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'". Alternatively, you can compile from the command line using `xelatex -interaction=nonstopmode main.tex`
 7. After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
 
+#### Method 3: Running Locally using a LaTeX job application workflow
+
+[This project](https://github.com/oresttokovenko/latex-resume-workflow) provides an automated workflow for creating, organizing, and maintaining your job application resumes using LaTeX, and is specifically compatible with the resume templates in this repository.
+
 ### Examples
 
 To view examples in a pdf format, please navigate to the examples directory in this repository.
