@@ -21,6 +21,8 @@ In addition to the resume templates, there is also a Cover Letter Template and a
 
 [Overleaf]: https://www.overleaf.com/latex/templates/resume-template-by-orest/zmrmcnwmxdxn 'Overleaf Resume Template'
    
+**Note**: the Overleaf template is not synced with this Github repository. For the most up to date files, please reference this repository and update the Overleaf files accordingly.
+
 #### Method 2: Running Locally with an Editor
 
 To run the LaTeX code from a GitHub repo locally, you can use an editor like Visual Studio Code with the LaTeX Workshop extension or IntelliJ IDEA with the TeXiFy IDEA plugin. Make sure that you use the XeLaTeX compiler. Follow these steps:
