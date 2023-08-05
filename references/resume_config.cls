@@ -93,6 +93,20 @@
     \vspace{-15pt}
 }
 
+
+% This header command matches the one in the general template.
+
+% \newcommand{\Header}[5]{
+%     \fancyhf{}
+%     \begin{center}
+%         {\Huge\textbf{\textsc{\textcolor{NavyBlue}{#1}}}}\\[4pt]
+%         \textcolor{black}{
+%             #2 $|$ #3 $|$ \href{mailto:#4}{#4} $|$ \href{https://linkedin.com/in/#5}{linkedin.com/in/#5}
+%         }\\[3pt]
+%     \end{center}
+%     \vspace{-15pt}
+% }
+
 \newcommand{\References}[5]{
     \noindent
     {\Large \textbf{#1}} \\  \bigskip
