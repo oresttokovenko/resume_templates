@@ -36,7 +36,7 @@
 \RequirePackage{lipsum}
 \RequirePackage{xparse}
 \RequirePackage{relsize}
-\usepackage{graphicx}
+\RequirePackage{graphicx}
 
 \setmainfont{TeX Gyre Heros} % adjust font style here
 
