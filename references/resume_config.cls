@@ -36,7 +36,7 @@
 \RequirePackage{lipsum}
 \RequirePackage{xparse}
 \RequirePackage{relsize}
-\RequirePackage{graphicx}
+\usepackage{graphicx}
 
 \setmainfont{TeX Gyre Heros} % adjust font style here
 
@@ -80,12 +80,6 @@
 %                Custom Commands
 %-------------------------------------------------------------------------------
 
-\newcommand*{\CustomBullet}{%
-    \hspace{0.1em}%
-    \raisebox{-0.1em}{\scalebox{1.5}{$\cdot$}}%
-    \hspace{0.5em}%
-}
-
 \NewDocumentCommand{\Header}{m m m m m m o}{
     \fancyhf{}
     \begin{center}
@@ -99,46 +93,12 @@
     \vspace{-15pt}
 }
 
-\newcommand{\WorkExperience}[5]{
+\newcommand{\References}[5]{
     \noindent
-    \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
-        \textbf{#1} & \textit{#3} \\
-        #2 & #4 \\
-    \end{tabular*}
-    
-    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
-        #5
-    \end{itemize}
-}
-
-\newcommand{\Project}[4]{
-    \noindent
-    \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
-        \textbf{#1} $|$ #2 \href{https://github.com/#3}{\faGithub} \\ % Added '&' before \href
-    \end{tabular*}
-    
-    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
-        #4
-    \end{itemize}
-}
-
-\newcommand{\Certification}[3]{
-    \noindent
-    \textbf{#1} $|$ {#2}\hfill \textit{#3}\\
-}
-
-\newcommand{\EducationExperience}[4]{
-    \noindent
-    \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
-        \textbf{#1} & \textit{#3} \\
-        #2 & #4 \\
-    \end{tabular*}
-}
-
-\newcommand{\SkillItem}[2]{\item \textbf{#1}{#2}}
-
-\newcommand{\SkillList}[1]{
-    \begin{itemize}[label={}, itemsep=-0.2em, leftmargin=0em]
-                #1
-        \end{itemize}
+    {\Large \textbf{#1}} \\  \bigskip
+    {#2} \\
+    {#3} \\
+    {#4} \\ \bigskip
+    {#5} \\
+    \vspace{16pt}
 }
