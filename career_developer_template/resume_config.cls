@@ -40,7 +40,7 @@
 
 \setmainfont{TeX Gyre Heros} % adjust font style here
 
-% Download the TeX Gyre Heros font here - https://www.fontsquirrel.com/fonts/download/TeX-Gyre-Heros
+% Download the TeX Gyre Heros font here - `curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip`
 
 % Additional fonts can be found at the following URL: https://www.draketo.de/anderes/latex-fonts.html#org9f59ea3
 
