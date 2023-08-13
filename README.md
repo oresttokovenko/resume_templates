@@ -21,7 +21,7 @@ In addition to the resume templates, there is also a Cover Letter Template and a
 
 [Overleaf]: https://www.overleaf.com/latex/templates/resume-template-by-orest/zmrmcnwmxdxn 'Overleaf Resume Template'
    
-**Note**: the Overleaf template is not synced with this Github repository. For the most up to date files, please reference this repository and update the Overleaf files accordingly.
+**NOTE**: the Overleaf template is not synced with this Github repository. For the most up to date files, please reference this repository and update the Overleaf files accordingly.
 
 #### Method 2: Running Locally with an Editor
 
@@ -29,11 +29,20 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 
 1. If you haven't already, download and install Visual Studio Code or IntelliJ IDEA
 2. Install the LaTeX Workshop extension for VS Code or the TeXiFy IDEA plugin for IntelliJ IDEA
-3. `git clone` the GitHub repo containing the LaTeX code to your local machine
-4. Open the cloned repo in your chosen editor (VS Code or IntelliJ IDEA)
-5. If you haven't already, install a LaTeX distribution. I used `brew install --cask mactex-no-gui`
-6. Use the editor's built-in commands or compile directly in the terminal with `xelatex main.tex`. In VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button, and in IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'". Alternatively, you can compile from the command line using `xelatex -interaction=nonstopmode main.tex`
-7. After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
+3. `git clone` the GitHub repository containing the LaTeX code to your local machine and open it in your text editor or IDE
+4. Download the font with the following curl command and install it
+   ```bash
+   curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip
+   ```
+6. Install a LaTeX distribution
+    ```
+    brew install --cask mactex-no-gui
+    ```
+ 7. Use the editor's built-in commands or compile directly in the terminal
+    * Using VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button
+    * Using IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'"
+    * Alternatively, you can compile from the command line using `xelatex -interaction=nonstopmode main.tex`
+7.  After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
 
 #### Method 3: Running Locally using a LaTeX job application workflow
 
