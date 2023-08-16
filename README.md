@@ -54,7 +54,7 @@ To view examples in a pdf format, please navigate to the examples directory in t
 
 ### Note
 
-I find the `chktex` linter/semantic checker extremely annoying for the reason that it flags perfectly good TeX code despite the code compiling succesfully. This linter comes bundled with LaTeX when you install it so if you want to disable it, add the JSON code to your VS Code json settings.
+I find the `chktex` linter/semantic checker extremely annoying for the reason that it flags perfectly good TeX code despite the code compiling succesfully. This linter comes bundled with LaTeX when you install it so if you want to disable it, add the JSON code below to your VS Code settings.
 
 ```json
 "latex.linter.enabled": false
