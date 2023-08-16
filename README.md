@@ -51,3 +51,11 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 ### Examples
 
 To view examples in a pdf format, please navigate to the examples directory in this repository.
+
+### Note
+
+I find the `chktex` linter/semantic checker extremely annoying for the reason that it flags perfectly good TeX code despite the code compiling succesfully. This linter comes bundled with LaTeX when you install it so if you want to disable it, add the JSON code to your VS Code json settings.
+
+```json
+"latex.linter.enabled": false
+```
