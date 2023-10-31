@@ -36,11 +36,10 @@
 \RequirePackage{lipsum}
 \RequirePackage{xparse}
 \RequirePackage{relsize}
-\RequirePackage{graphicx}
+\RequirePackage{etoolbox}
+\usepackage{graphicx}
 
 \setmainfont{TeX Gyre Heros} % adjust font style here
-
-% Download the TeX Gyre Heros font here - `curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip`
 
 % Additional fonts can be found at the following URL: https://www.draketo.de/anderes/latex-fonts.html#org9f59ea3
 
@@ -99,16 +98,22 @@
     \vspace{-15pt}
 }
 
-\newcommand{\WorkExperience}[5]{
+\newcommand{\Summary}[1]{
+  \noindent
+  {#1}
+}
+
+\newcommand{\WorkExperience}[6]{
     \noindent
     \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} r}
         \textbf{#1} & \textit{#3} \\
         #2 & #4 \\
     \end{tabular*}
-    
+    \notblank{#5}{ #5}{}
     \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
-        #5
+        #6
     \end{itemize}
+    \vspace{5pt}
 }
 
 \newcommand{\Certification}[3]{
