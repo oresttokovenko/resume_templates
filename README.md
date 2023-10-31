@@ -30,19 +30,27 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 1. If you haven't already, download and install Visual Studio Code or IntelliJ IDEA
 2. Install the LaTeX Workshop extension for VS Code or the TeXiFy IDEA plugin for IntelliJ IDEA
 3. `git clone` the GitHub repository containing the LaTeX code to your local machine and open it in your text editor or IDE
-4. Download the font with the following curl command and install it
-   ```bash
-   curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip
-   ```
-6. Install a LaTeX distribution
+4. Install a LaTeX distribution and our fonts
+  * **On Mac**, use maxtex:
+
+    Download the font with the following curl command and install it
+    ```bash
+    curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/Downloads/tex-gyre.zip
     ```
+    Then install mactex:
+    ```bash
     brew install --cask mactex-no-gui
     ```
- 7. Use the editor's built-in commands or compile directly in the terminal
+  * **On Fedora Linux**, use texlive:
+    ```bash
+    sudo dnf install texlive-scheme-basic texlive-fontawesome5 texlive-lipsum texlive-relsize texlive-tex-gyre
+    ```
+
+5. Use the editor's built-in commands or compile directly in the terminal
     * Using VS Code with LaTeX Workshop, you can click the "Build LaTeX Project" button
     * Using IntelliJ IDEA with TeXiFy IDEA, you can right-click the `.tex file` and select "Run 'XeLaTeX'"
     * Alternatively, you can compile from the command line using `xelatex -interaction=nonstopmode main.tex`
-7.  After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
+6.  After the compilation is complete, you can preview the output PDF file in your editor or your preferred PDF viewer
 
 #### Method 3: Running Locally using a LaTeX job application workflow
 
