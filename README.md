@@ -31,7 +31,7 @@ To run the LaTeX code from a GitHub repo locally, you can use an editor like Vis
 2. Install the LaTeX Workshop extension for VS Code or the TeXiFy IDEA plugin for IntelliJ IDEA
 3. `git clone` the GitHub repository containing the LaTeX code to your local machine and open it in your text editor or IDE
 4. Install a LaTeX distribution and our fonts
-  * **On Mac**, use maxtex:
+  * **On Mac**, use mactex:
 
     Download the font with the following curl command and install it
     ```bash
