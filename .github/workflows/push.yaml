@@ -1,0 +1,44 @@
+name: resume_templates_push
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compile_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install LaTeX distribution
+        run: |
+          sudo apt update
+          sudo apt-get install --no-install-recommends texlive-xetex texlive-fonts-recommended texlive-plain-generic 
+      - name: download font dependencies
+        run: |
+          curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" -O
+      - name: install font dependencies
+        run: |
+          unzip tex-gyre.zip -d fonts
+          mkdir -p ~/.local/share/fonts
+          cp fonts/*.ttf ~/.local/share/fonts/
+          cp fonts/*.otf ~/.local/share/fonts/
+          fc-cache -f -v
+      - name: compile resumes
+        run: |
+          mkdir -p output
+          xelatex -output-directory=output career_developer_template/main.tex
+          xelatex -output-directory=output general_template/main.tex
+          xelatex -output-directory=output junior_developer_template/main.tex
+          xelatex -output-directory=output cover_letter/main.tex
+          xelatex -output-directory=output references/main.tex
+      - name: move PDFs to examples directory
+        run: |
+          mkdir -p examples
+          mv output/*.pdf examples/
+      - name: commit and push PDFs
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add examples/*
+          git commit -m "Update example PDFs" || echo "No changes to commit"
+          git push
