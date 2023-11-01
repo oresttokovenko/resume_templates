@@ -22,15 +22,12 @@ jobs:
           sudo apt-get install --no-install-recommends texlive-xetex texlive-fonts-recommended texlive-plain-generic 
       - name: download font dependencies
         run: |
-          curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" -O
+          curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output ~/tex-gyre.zip
       - name: install font dependencies
         run: |
-          unzip tex-gyre.zip -d fonts
-          mkdir -p ~/.local/share/fonts
-          cp fonts/*.ttf ~/.local/share/fonts/
-          cp fonts/*.otf ~/.local/share/fonts/
+          unzip ~/tex-gyre.zip  
+          cp ~/tex-gyre/opentype/*.otf usr/share/fonts
           fc-cache -f -v
-          fc-list | grep "gyre"
       - name: compile career developer template
         run: |
           xelatex career_developer_template/main.tex
