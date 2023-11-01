@@ -19,7 +19,7 @@ jobs:
       - name: install font dependencies
         run: |
             unzip tex-gyre.zip  
-            cp tex-gyre/opentype/*.otf usr/share/fonts
+            cp tex-gyre/opentype/*.otf /usr/share/fonts
             fc-cache -f -v
       - name: compile resumes
         run: |
