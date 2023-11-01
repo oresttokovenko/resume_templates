@@ -13,26 +13,48 @@ jobs:
         run: |
           sudo apt update
           sudo apt-get install --no-install-recommends texlive-xetex texlive-fonts-recommended texlive-plain-generic 
+
       - name: download font dependencies
         run: |
-            curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output tex-gyre.zip
+          curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output tex-gyre.zip
+
       - name: install font dependencies
         run: |
-            unzip tex-gyre.zip  
-            cp tex-gyre/opentype/*.otf /usr/share/fonts
-            fc-cache -f -v
-      - name: compile resumes
-        run: |
+          unzip tex-gyre.zip  
+          cp tex-gyre/opentype/*.otf /usr/share/fonts
+          fc-cache -f -v
           mkdir -p output
-          xelatex -output-directory=output career_developer_template/main.tex
-          xelatex -output-directory=output general_template/main.tex
-          xelatex -output-directory=output junior_developer_template/main.tex
-          xelatex -output-directory=output cover_letter/main.tex
-          xelatex -output-directory=output references/main.tex
+
+      - name: compile career developer resume
+        run: |
+          xelatex -output-directory=output main.tex
+        working-directory: ./career_developer_template
+        
+      - name: compile general template
+        run: |
+          xelatex -output-directory=output main.tex
+        working-directory: ./general_template
+        
+      - name: compile junior developer template
+        run: |
+          xelatex -output-directory=output main.tex
+        working-directory: ./junior_developer_template
+        
+      - name: compile cover letter
+        run: |
+          xelatex -output-directory=output main.tex
+        working-directory: ./cover_letter
+        
+      - name: Compile references
+        run: |
+          xelatex -output-directory=output main.tex
+        working-directory: ./references
+
       - name: move PDFs to examples directory
         run: |
           mkdir -p examples
           mv output/*.pdf examples/
+
       - name: commit and push PDFs
         run: |
           git config user.name github-actions
