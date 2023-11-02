@@ -80,6 +80,12 @@
 %                Custom Commands
 %-------------------------------------------------------------------------------
 
+\newcommand*{\CustomBullet}{%
+    \hspace{0.1em}%
+    \raisebox{-0.1em}{\scalebox{1.5}{$\cdot$}}%
+    \hspace{0.5em}%
+}
+
 \NewDocumentCommand{\Header}{m m m m m m o}{
     \fancyhf{}
     \begin{center}

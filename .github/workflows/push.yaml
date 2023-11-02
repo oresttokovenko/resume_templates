@@ -4,12 +4,12 @@ on:
     branches:
       - main
     # only checking directories with .tex files
-    # paths:
-    #   - 'career_developer_template/**'
-    #   - 'general_template/**'
-    #   - 'junior_developer_template/**'
-    #   - 'cover_letter/**'
-    #   - 'references/**'
+    paths:
+      - 'career_developer_template/**'
+      - 'general_template/**'
+      - 'junior_developer_template/**'
+      - 'cover_letter/**'
+      - 'references/**'
 jobs:
   compile_check:
     runs-on: ubuntu-latest
@@ -20,46 +20,37 @@ jobs:
           sudo apt update
           sudo apt-get install texlive-xetex texlive-fonts-extra texlive-plain-generic
 
-      # - name: download font dependencies
-      #   run: |
-      #     curl "https://mirror.quantum5.ca/CTAN/fonts/tex-gyre.zip" --output tex-gyre.zip
-
-      # - name: install font dependencies
-      #   run: |
-      #     unzip tex-gyre.zip  
-      #     cp tex-gyre/opentype/*.otf /usr/share/fonts
-      #     fc-cache -f -v
-
-      - name: compile career developer resume
+      - name: Compile career developer resume
         run: |
           xelatex -jobname=career_developer_template main.tex
         working-directory: ./career_developer_template
         
-      - name: compile general template
+      - name: Compile general template
         run: |
           xelatex -jobname=general_template main.tex
         working-directory: ./general_template
         
-      - name: compile junior developer template
+      - name: Compile junior developer template
         run: |
           xelatex -jobname=junior_developer_template main.tex
         working-directory: ./junior_developer_template
         
-    #   - name: compile cover letter
-    #     run: |
-    #       xelatex main.tex
-    #     working-directory: ./cover_letter
+      - name: Compile cover letter
+        run: |
+          xelatex -jobname=cover_letter_template main.tex
+        working-directory: ./cover_letter
         
-    #   - name: compile references
-    #     run: |
-    #       xelatex main.tex
-    #     working-directory: ./references
+      - name: Compile references
+        run: |
+          xelatex -jobname=references_template main.tex
+        working-directory: ./references
 
-      - name: move PDFs to examples directory
+      - name: Move PDFs to examples directory
         run: |
           mkdir -p examples
           find ${{ github.workspace }} -name '*_template.pdf' -exec cp {} examples/ \;
-      - name: configure Git
+
+      - name: Configure Git
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -69,7 +60,7 @@ jobs:
           git add examples/*
           git commit -m "Update example PDFs" || echo "No changes to commit"
 
-      - name: push changes
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
